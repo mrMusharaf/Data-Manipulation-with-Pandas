@@ -27,6 +27,32 @@ print(homelessness.index)
 ```
 *Note: The `homelessness` DataFrame contains 2018 estimates of homelessness across U.S. states. The `individuals` column represents the number of homeless individuals not part of a family, `family_members` represents those in families, and `state_pop` represents the total state population.*
 
+(To load the `homelessness` dataset before applying the data manipulation techniques, you'll need to read the dataset into a Pandas DataFrame. Depending on the format of your dataset (e.g., CSV, Excel, JSON), you can use the appropriate Pandas function.
+
+Here’s an example of how to load the dataset if it is stored as a CSV file:
+
+```python
+# Import pandas using the alias pd
+import pandas as pd
+
+# Load the dataset into a DataFrame
+homelessness = pd.read_csv('path_to_your_file/homelessness.csv')
+
+# Display the first few rows to verify the dataset is loaded correctly
+print(homelessness.head())
+```
+
+### Explanation:
+- **`import pandas as pd`**: Imports the Pandas library and gives it the alias `pd`, which is the standard convention.
+- **`pd.read_csv('path_to_your_file/homelessness.csv')`**: Reads the CSV file into a Pandas DataFrame. Replace `'path_to_your_file/homelessness.csv'` with the actual path to your dataset.
+- **`print(homelessness.head())`**: Prints the first few rows of the DataFrame to confirm that the dataset has been loaded correctly.
+
+If your dataset is in a different format, you can use other Pandas functions like:
+- **Excel**: `pd.read_excel('path_to_your_file/homelessness.xlsx')`
+- **JSON**: `pd.read_json('path_to_your_file/homelessness.json')`
+
+Make sure to adjust the file path according to where your dataset is located. Once loaded, you can proceed with applying the various data manipulation techniques as described earlier.)
+
 #### Sorting Rows
 
 To uncover valuable insights, it is often helpful to reorder the rows in a DataFrame. You can sort rows by passing a column name to the `.sort_values()` method. When multiple rows have the same value, you can break ties by sorting on additional columns.

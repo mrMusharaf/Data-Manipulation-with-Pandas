@@ -14,7 +14,7 @@ Understanding the structure of a DataFrame is crucial, as it is composed of thre
 - `.values`: A two-dimensional NumPy array containing the data.
 - `.columns`: An index representing the column names.
 - `.index`: An index representing the row labels, which can be numbers or names.
-These indexes can often be treated as lists of strings or numbers, but pandas also supports more complex indexing, which will be discussed later.
+These indexes can often be treated as lists of strings or numbers, but pandas also supports more complex indexing.
 
 ```python
 # Import pandas using the alias pd
@@ -51,7 +51,7 @@ If your dataset is in a different format, you can use other Pandas functions lik
 - **Excel**: `pd.read_excel('path_to_your_file/homelessness.xlsx')`
 - **JSON**: `pd.read_json('path_to_your_file/homelessness.json')`
 
-Make sure to adjust the file path according to where your dataset is located. Once loaded, you can proceed with applying the various data manipulation techniques as described earlier.)
+Make sure to adjust the file path according to where your dataset is located. Once loaded, you can proceed with applying the various data manipulation techniques)
 
 #### Sorting Rows
 
